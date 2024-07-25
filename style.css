@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Epilogue;
+    src: url(fonts/Epilogue-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: EpilogueBold;
+    src: url(fonts/Epilogue-Bold.ttf);
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+nav a{
+    color:#707070
+}
+
+body{
+    font-family: Epilogue
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+}
+
+nav ul{
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+nav ul li{
+    color:#707070
+}
+nav div{
+    display: flex;
+    align-items: center;
+}
+nav .snap{
+    width: 6em;
+    height: 2em;
+}
+
+nav .initial{
+    width: 80%;
+    margin-left: 4em;
+}
+nav .botones{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-right: 4em;
+}
+
+nav button{
+    font-family: Epilogue;
+    border: 2px solid #b4b4b4;
+    background-color: transparent;
+    border-radius: 15px;
+    color: #707070;
+    width: 7em;
+    padding: 1em;
+    font-size: 16px;
+}
+
+section{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    align-items: center;
+}
+
+section ul{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 5em;
+    margin-right: 2em;
+    margin-left: -2.3em;
+}
+
+section div{
+margin-right: -18em;
+}
+
+section div h1{
+    font-family: EpilogueBold;
+    font-size: 72px;
+    color: #212529;
+}
+
+section div p{
+    width: 50%;
+    color: #707070;
+    font-size: 20px;
+}
+
+section div button{
+    border: 2px solid #545454;
+    color: white;
+    font-family: EpilogueBold;
+    padding: 1.2em 2.2em;
+    background-color: black;
+    border-radius: 15px ;
+    font-size: 20px;
+    margin-top: 2em;
+}
+
+section img{
+height: 75%;
+}
+
+label{
+    cursor:pointer;
+}
+
+#Features{
+    display: none;
+}
+
+#Features ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: -7em;
+}
+
+#Features ul li{
+    display: flex;
+    width: 100%;
+    margin: 1.5em 0 0 0;
+    color: black;
+}
+
+#Company{
+    display: none;
+}
+
+#Company ul{
+    display: flex;
+    flex-direction: column;
+    margin-left: -7em;
+}
+
+#Company ul li{
+    display: flex;
+    width: 100%;
+    margin: 1.5em 0 0 0;
+    color: black;
+}
+
+input[type="checkbox"]{
+    display: none;
+}
+
+
+
+#menu_feat:checked ~ #Features{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    box-shadow: -2px 3px 19px -3px rgba(191,185,191,1);
+    width: 11em;
+    top: 5em;
+    left:11em;
+    border-radius: 10px;
+    height: 11em;
+
+}
+
+#menu_com:checked ~ #Company{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    box-shadow: -2px 3px 19px -3px rgba(191,185,191,1);
+    width: 9em;
+    top: 5em;
+    left:23em;
+    border-radius: 10px;
+    height: 10em;
+}
