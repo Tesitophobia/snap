@@ -125,13 +125,23 @@ label{
 #Features ul{
     display: flex;
     flex-direction: column;
-    margin-left: -7em;
+    margin-left: -6em;
 }
 #Features ul li{
     display: flex;
     width: 100%;
     margin: 1.5em 0 0 0;
-    color: black;
+    color: #707070;
+}
+
+#Features ul li:hover{
+    cursor: pointer;
+    color:black;
+}
+#Features ul li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 1em;
 }
 #Company{
     display: none;
@@ -139,13 +149,18 @@ label{
 #Company ul{
     display: flex;
     flex-direction: column;
-    margin-left: -7em;
+    margin-left: 2em;
+    width: 100%;
 }
 #Company ul li{
     display: flex;
     width: 100%;
     margin: 1.5em 0 0 0;
-    color: black;
+    color: #707070;
+}
+#Company ul li:hover{
+    cursor: pointer;
+    color:black;
 }
 input[type="checkbox"]{
     display: none;
@@ -160,7 +175,7 @@ input[type="checkbox"]{
     top: 5em;
     left:11em;
     border-radius: 10px;
-    height: 11em;
+    height: 12em;
 
 }
 #menu_com:checked ~ #Company{
@@ -173,7 +188,7 @@ input[type="checkbox"]{
     top: 5em;
     left:23em;
     border-radius: 10px;
-    height: 10em;
+    height: 9em;
 }
 nav ul li:hover{
     color: black;
@@ -184,3 +199,58 @@ nav ul li a:hover{
 .logg:hover{
     color:black;
 }
+
+@media only screen and (max-width: 1366px) {
+    nav{
+        margin-top: 1.5em;
+    }
+    nav .initial{
+        margin-left: 2em;
+    }
+    nav .botones{
+        margin-right: 2em;
+    }
+    nav ul{
+        width: 40%;
+    }
+
+    #menu_feat:checked ~ #Features{
+        left: 7em;
+    }
+    #menu_com:checked ~ #Company{
+        left:19em;
+    }
+
+    section div h1{
+        font-size: 64px;
+    }
+
+    section div{
+        margin-right: -24em;
+    }
+
+    section ul{
+        margin-left: -6em;
+        justify-content: space-evenly;
+        margin-top: 3em;
+    }
+
+    section ul li img{
+    max-width: 100px;
+    max-height: 30px;
+    }
+
+    section img{
+        height: 93%;
+    }
+
+    .data{
+        max-width: 140px;
+        max-height: 50px;
+    }
+    section div p{
+        margin: -2em 0 -1em 0;
+        font-size: 17px;
+    }
+
+  }
