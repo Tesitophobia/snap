@@ -6,6 +6,12 @@
     font-family: EpilogueBold;
     src: url(fonts/Epilogue-Bold.ttf);
 }
+
+::selection{
+    color: white;
+    background-color: #111010;
+}
+
 .snap:hover{
     transition: 200ms;
     transform: scale(1.1);
@@ -190,6 +196,11 @@ input[type="checkbox"]{
     border-radius: 10px;
     height: 9em;
 }
+
+ul li label img{
+    margin-left: 8px;
+}
+
 nav ul li:hover{
     color: black;
 }
