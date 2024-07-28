@@ -6,6 +6,10 @@
     font-family: EpilogueBold;
     src: url(fonts/Epilogue-Bold.ttf);
 }
+@font-face {
+    font-family: EpilogueRegular;
+    src: url(fonts/Epilogue-Regular.ttf);
+}
 
 ::selection{
     color: white;
@@ -40,7 +44,8 @@ nav ul{
     justify-content: space-around;
 }
 nav ul li{
-    color:#707070
+    color:#707070;
+    transition: 200ms;
 }
 nav div{
     display: flex;
@@ -204,11 +209,29 @@ ul li label img{
 nav ul li:hover{
     color: black;
 }
+
+nav ul li a{
+    transition: 200ms;
+}
+
 nav ul li a:hover{
     color:black;
+    transition: 200ms;
 }
 .logg:hover{
     color:black;
+}
+
+.lr{
+    display: none;
+}
+
+.burger{
+    display: none;
+}
+
+.mobile{
+    display: none;
 }
 
 @media only screen and (max-width: 1366px) {
@@ -264,4 +287,68 @@ nav ul li a:hover{
         font-size: 17px;
     }
 
+  }
+
+  @media only screen and (max-width: 785px) {
+
+    nav div ul{
+        display: none;
+    }
+
+    nav .botones{
+        display: none;
+    }
+
+    nav .initial{
+        margin-left: 0.5em;
+    }
+
+    .burger{
+        display: block;
+        margin-right: 0.5em;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    section{
+        flex-direction: column;
+        margin-top: 13em;
+    }
+
+    .mobile{
+        height: 65%;
+    }
+
+    section div{
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section div h1{
+        font-size: 36px;
+    }
+
+    section div p{
+        font-family:EpilogueRegular ;
+        text-align: center;
+        font-size: 24px;
+        width: 55%;
+        margin: -1em 0 0 0;
+    }
+
+    section br{
+        display: none;
+    }
+
+    section ul{
+        margin-left: 0;
+    }
   }
