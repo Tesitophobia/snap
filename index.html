@@ -10,7 +10,7 @@
 <nav>
     <div class="initial">
     <img class="snap" src="assets/logo.svg">
-    <ul>
+    <ul id="options">
         <li class="one"><label for="menu_feat">Features<img id="down1" src="assets/icon-arrow-down.svg"></label></li>
         <input type="checkbox" name="Featuress" id="menu_feat">
         <div id="Features">
@@ -36,15 +36,50 @@
             <a href="/#" class="logg">Login</a>
             <button class="regg">Register</button>
         </div>
+
+        
     </ul>  
-    </div>
+</div>
     <div class="botones">
         <a href="/#" class="logg">Login</a>
         <button class="regg">Register</button>
     </div>
-        <label class="burger" for="ham"><img src="assets/icon-menu.svg" alt="Menú"></label>
-        <input type="checkbox" name="burger" id="ham">
+    
+    <div class="menumobile">
+    <label class="burger" for="ham"><img id="menu-image" src="assets/icon-menu.svg" alt="Menú"></label>
+    <input type="checkbox" name="burger" id="ham">
 
+    <ul id="options">
+        <li class="one"><label for="menu_feat">Features<img id="down1" src="assets/icon-arrow-down.svg"></label></li>
+        <input type="checkbox" name="Featuress" id="menu_feat">
+        <div id="Features">
+            <ul>
+                <li><img src="assets/icon-todo.svg">ToDoList</li>
+                <li><img src="assets/icon-calendar.svg">Calendar</li>
+                <li><img src="assets/icon-reminders.svg">Reminders</li>
+                <li><img src="assets/icon-planning.svg">Planning</li>
+            </ul>
+        </div>
+        <li class="dos"><label id="label_com" for="menu_com" >Company<img src="assets/icon-arrow-down.svg"></label></li>
+        <input type="checkbox" name="Companyy" id="menu_com">
+        <div id="Company">
+            <ul>
+            <li>History</li>
+            <li>Our Team</li>
+            <li>Blog</li>
+            </ul>
+        </div>
+        <li><a href="/#">Careers</a></li>
+        <li><a href="/#"> About</a></li>
+        <div class="lr">
+            <a href="/#" class="logg">Login</a>
+            <button class="regg">Register</button>
+        </div>
+
+        
+    </ul>  
+
+    </div>
 </nav>
 
 <section>
@@ -80,6 +115,16 @@
     imagenCompany.src = checkboxCompany.checked ? "assets/icon-arrow-up.svg" : "assets/icon-arrow-down.svg";
   });
 }
+const menuToggle = document.getElementById('ham');
+const menuIcon = document.getElementById('menu-image');
+
+menuToggle.addEventListener('change', () => {
+  if (menuToggle.checked) {
+    menuIcon.src = 'assets/icon-close-menu.svg';
+  } else {
+    menuIcon.src = 'assets/icon-menu.svg';
+  }
+});
   </script>
 </body>
 </html>

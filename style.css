@@ -351,4 +351,37 @@ nav ul li a:hover{
     section ul{
         margin-left: 0;
     }
-  }
+
+    .burger{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 2em;
+        right:1em;
+    }
+    .lr{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em;
+    }
+    #ham:checked ~ #options{
+        display: flex;
+        flex-direction: column;
+        justify-content: center ;
+        position: absolute;
+        top:-5em;
+        right: 0;
+        background-color: white;
+        height: 140%;
+        width: 60%;
+    }
+
+    #options li{
+        margin-top: 1em;
+    }
+    
+    .lr button{
+        margin-top: 1em;
+    }
+}
+
