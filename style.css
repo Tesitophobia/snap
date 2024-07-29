@@ -234,6 +234,10 @@ nav ul li a:hover{
     display: none;
 }
 
+.menumobile{
+    display: none;
+}
+
 @media only screen and (max-width: 1366px) {
     nav{
         margin-top: 1.5em;
@@ -325,6 +329,12 @@ nav ul li a:hover{
         height: 65%;
     }
 
+
+    .menumobile{
+     display: block;
+    }
+
+
     section div{
         margin-right: 0;
         display: flex;
@@ -386,3 +396,7 @@ nav ul li a:hover{
 
 }
 
+
+@media only screen and (max-width: 785px) {
+    
+}
