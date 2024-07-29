@@ -327,6 +327,7 @@ nav ul li a:hover{
     }
 
     .mobile{
+
         height: 65%;
     }
 
@@ -404,7 +405,8 @@ nav ul li a:hover{
         max-height:20px ;
     }
     .mobile{
-        width: 60%;
+        width: 62%;
+        height: 31%;
     }
     .data{
         max-width:90px ;
