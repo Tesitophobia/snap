@@ -239,6 +239,18 @@ nav ul li a:hover{
     display: none;
 }
 
+#Featuresm{
+    display: none;
+}
+
+#Companys{
+    display: none;
+}
+
+#optionsm{
+    display: none;
+}
+
 @media only screen and (max-width: 1366px) {
     nav{
         margin-top: 1.5em;
@@ -296,7 +308,7 @@ nav ul li a:hover{
 
   @media only screen and (max-width: 785px) {
 
-    nav div ul{
+    #options{
         display: none;
     }
 
@@ -376,7 +388,7 @@ nav ul li a:hover{
         flex-direction: column;
         margin-top: 1em;
     }
-    #ham:checked ~ #options{
+    #ham:checked ~ #optionsm{
         display: flex;
         flex-direction: column;
         justify-content: center ;
@@ -388,7 +400,7 @@ nav ul li a:hover{
         width: 60%;
     }
 
-    #options li{
+    #optionsm li{
         margin-top: 1em;
     }
     
@@ -396,6 +408,25 @@ nav ul li a:hover{
         margin-top: 1em;
     }
 
+    #menu_featm:checked ~ #Featuresm{
+        display: block;
+    }
+
+    #Featuresm ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: -2em;
+    }
+
+    #menu_comm:checked ~ #Companys{
+        display: block;
+    }
+
+    #Companys ul{
+        display: flex;
+        flex-direction: column;
+        margin-left: -2.3em;
+    }
 }
 
 
