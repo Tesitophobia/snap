@@ -416,6 +416,7 @@ nav ul li a:hover{
         display: flex;
         flex-direction: column;
         margin-left: -2em;
+        width: 100%;
     }
 
     #menu_comm:checked ~ #Companys{
